@@ -4,22 +4,19 @@ BY Harriet
 
 ## Overview of this tool
 
-- Get Facebook posts, comments, and engagements of a page that you are an admin, editor, or analyst of
-- Get Instagram posts, likes, and comments of a public user OR of a private user that you follow (login required)
-- Get LinkedIn profile, posts, likes, comments, engagements, and impressions of a company page you are an admin of
-- Get Twitter profile and tweets of any Twitter user
-- Get Weibo profile, tweets, and engagements of any Weibo user
-- Run sentiment analysis and keyword extraction on bodies of text retrieved from social media
-- Consolidate posts/tweets and comments into 2 big csv files
+- Get Youtube posts or comments, using a tool with no credentials needed, and and run tool to display output csv file
+- Get Twitter  public comments about a topic, using user login  credentials, and run tool to display output csv file
+- Get Facebook comments of a public posts using login credentials by tools of Sellenium , and use Instant Data Scrapper to collect data
+- Get Seneweb comments by typing the word of interest in the google search, and then scrap the page using Scrapy tool, use Insatnt Data Scrapper to collect data
+- Get Senego comments by typing the word of interest in the google search, and then scrap the page using Scrapy tool, use Insatnt Data Scrapper to collect data
+- Consolidate posts/tweets and comments into one big csv file
 
 This tool is compatible with Python 3.6+.
 
 ## Python Dependencies
 
 - [tweepy](http://tweepy.readthedocs.io/en/v3.5.0/)
-- [instaloader](https://instaloader.github.io)
-- [bosonnlp](http://bosonnlp-py.readthedocs.io)
-- [weibo-scraper](https://github.com/Xarrow/weibo-scraper)
+- [Instant_Data_Scrapper](https://chrome.google.com/webstore/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah)
 
 To install a missing `package`, run
 
@@ -31,10 +28,3 @@ Before running this script, it is important that you get the necessary access to
 
 Once you get these tokens, make sure to paste them into key_params.json.
 
-In addition, input the names of the Facebook and LinkedIn pages and Instagram, and Twitter users into key_params.json.
-
-Once you have acquired the necessary access tokens and parameters in key_params.json, run
-
-`python run.py`
-
-A status log will be output {date}\_{time}\_log.txt
